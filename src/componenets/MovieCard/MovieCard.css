@@ -1,0 +1,11 @@
+.container,
+.title,
+.rating,
+.home {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
