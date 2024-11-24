@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MovieProject from "./componenets/MovieProject";
-import PageNotFound from "./componenets/PageNotFound";
+import MovieProject from "./MovieProject/MovieProject";
+import PageNotFound from "./componenets/PageNotFound/PageNotFound"
 import Footer from "./componenets/Footer/Footer";
 import NavBar from "./componenets/Header/NavBar";
 import MovieCard from "./componenets/MovieCard/MovieCard";
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+        <div className="bg">
+    <Router>
         <NavBar />
         <Routes>
           <Route path="/" element={<MovieProject />} />
@@ -17,7 +18,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </div>
+      </div>
   );
 }
 

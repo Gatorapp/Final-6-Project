@@ -1,4 +1,4 @@
-import "../componenets/MovieProject.css";
+import "../MovieProject/MovieProject.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -10,6 +10,8 @@ function MovieProject ()  {
   const [sortBy, setSortBy] = useState("popularity.desc");
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const handleSearchSubmit = async () => {
     const response = await axios.get(
@@ -72,8 +74,7 @@ function MovieProject ()  {
 
   return (
     <>
-      <div className="nav-bar">
-        <h1>Movie Project</h1>
+      <div>
         <div className="search-bar">
           <input
             className="search-input"
@@ -83,7 +84,7 @@ function MovieProject ()  {
             onChange={handleSearchChange}
           />
           <button className="search-button" onClick={handleSearchSubmit}>
-            <AiOutlineSearch /> Search
+            <AiOutlineSearch /> Search / Reset Search
           </button>
         </div>
 
@@ -125,8 +126,11 @@ function MovieProject ()  {
                   />
                 </div>
                 <div className="info">
+                  <div>
                   <h2 className="title">{movie.title}</h2>
-                  <p className="rating"> {movie.vote_average.toFixed(1)}</p>
+                  <h4 className="release">{movie.release_date}</h4>
+                  </div>
+                  <p className="rating"> {movie.vote_average.toFixed(0)}</p>
                 </div>
               </Link>
             </div>
