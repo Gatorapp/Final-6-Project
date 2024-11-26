@@ -7,20 +7,19 @@ import MovieCard from "./componenets/MovieCard/MovieCard";
 import "./App.css"
 
 function App() {
-  return (
-    <>
-        <div className="bg">
+  return (   
     <Router>
         <NavBar />
+        <div className="bg">
         <Routes>
           <Route path="/" element={<MovieProject />} />
           <Route path='/movie/:id' element={<MovieCard />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+      </div>
         <Footer />
       </Router>
-      </div>
-      </>
+ 
   );
 }
 
