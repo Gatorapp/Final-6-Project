@@ -43,11 +43,10 @@
     align-item: center;
     font-family: "Roboto Slab", serif;
     color: #f9f9f9;
-
+    margin: 0px;
 }
 
-.detail-rating {
-    
+.detail-rating {    
     width: 20px;
     height: 20px;
     border-radius: 24px;
