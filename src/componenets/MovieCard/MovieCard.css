@@ -18,7 +18,6 @@
 
 .detail-info {
     padding-inline: 15px;
-
 }
 
 .detail-poster img{
@@ -90,5 +89,41 @@
     cursor: pointer;
     box-shadow: 0px 2px 12px lightgray;
     transition: ease background-color 250ms;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .detail-container {
+        margin-bottom: 225px;
+    }
+    .detail-title {
+        color: orange;
+        postion: relative;
+        font-size: 16px;
+    }
+
+   .detail-info {
+        position: absolute;
+        color: orange;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+   }
+
+   .detail-rating {    
+    width: 10px;
+    height: 10px;
+    border-radius: 24px;
+    border: none;
+    background-color: maroon;
+    font-size: 16px;
+    display: flex; 
+    text-align: center;   
+}
+
+    .detail-extra {
+        display: flex;
+        justify-content: space;
+    }
 
 }

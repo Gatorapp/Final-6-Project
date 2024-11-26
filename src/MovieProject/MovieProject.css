@@ -158,3 +158,18 @@ h1 {
 .release {
     font-size: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+    .movie { 
+      width: 240px;
+      height: 424px;
+    }
+
+    .movie-wrapper,
+    .filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -67,10 +67,10 @@ function MovieCard() {
             </p>
             <h5>Rate:</h5><p className="detail-rating"> {movie.vote_average.toFixed(0)}</p>
           </div>
+        </div>
           <Link to={"/"} className="detail-back">
             back
           </Link>
-        </div>
       </div>
     </>
   );
