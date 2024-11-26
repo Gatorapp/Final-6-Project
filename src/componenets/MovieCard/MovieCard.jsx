@@ -58,13 +58,14 @@ function MovieCard() {
             {movie.release_date}
           </p>
           <h3>
-            Overview<p className="overview"> {movie.overview}</p>
+            Overview<p className="detail-overview"> {movie.overview}</p>
           </h3>
           <div className="detail-extra">
             <p className="detail-genre">
               <strong>Genres : </strong>{" "}
               {movie.genres.map((genre) => genre.name).join(", ")}
             </p>
+            <h5>Rate:</h5><p className="detail-rating"> {movie.vote_average.toFixed(0)}</p>
           </div>
           <Link to={"/"} className="detail-back">
             back
