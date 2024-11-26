@@ -10,7 +10,6 @@ function MovieProject ()  {
   const [sortBy, setSortBy] = useState("popularity.desc");
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
 
 
   const handleSearchSubmit = async () => {

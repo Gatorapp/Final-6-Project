@@ -8,6 +8,7 @@ import "./App.css"
 
 function App() {
   return (
+    <>
         <div className="bg">
     <Router>
         <NavBar />
@@ -19,6 +20,7 @@ function App() {
         <Footer />
       </Router>
       </div>
+      </>
   );
 }
 
