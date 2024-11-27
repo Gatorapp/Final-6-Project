@@ -83,7 +83,7 @@ function MovieProject ()  {
             onChange={handleSearchChange}
           />
           <button className="search-button" onClick={handleSearchSubmit}>
-            <AiOutlineSearch /> Search / Reset Search
+            <AiOutlineSearch /> Search/Reset
           </button>
         </div>
 
