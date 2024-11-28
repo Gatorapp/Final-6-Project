@@ -125,7 +125,7 @@ function MovieProject ()  {
                   />
                 </div>
                 <div className="info">
-                  <div>
+                <div>
                   <h2 className="title">{movie.title}</h2>
                   <h4 className="release">{movie.release_date}</h4>
                   </div>

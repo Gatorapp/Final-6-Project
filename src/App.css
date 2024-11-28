@@ -8,9 +8,13 @@
 
 }
 
-.bg {
-    align-content: center;
-    background-image: url('./assets/theater.jpg');
-    background-size: cover;
+body {
+
+	background-image: url('./assets/theater.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
+
 
